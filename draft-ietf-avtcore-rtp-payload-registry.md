@@ -1,5 +1,5 @@
 ---
-docname: draft-westerlund-rtp-payload-registry-latest
+docname: draft-ietf-avtcore-rtp-payload-registry-latest
 title: Closing the IANA RTP Payload Format Registry 
 abbrev: Close RTP Payload Registry
 updates: 4855, 8088 
