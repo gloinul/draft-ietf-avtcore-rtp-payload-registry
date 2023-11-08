@@ -1,8 +1,8 @@
 ---
 docname: draft-ietf-avtcore-rtp-payload-registry-latest
-title: Closing the IANA RTP Payload Format Registry 
+title: Closing the IANA RTP Payload Format Media Type Registry
 abbrev: Close RTP Payload Registry
-updates: 4855, 8088 
+updates: 4855, 8088
 cat: std
 ipr: trust200902
 wg: AVTCORE
@@ -28,9 +28,16 @@ normative:
   RFC2119:
   RFC4855:
   RFC8088:
-  
+
+  IANA-REG:
+    target: "https://datatracker.ietf.org/doc/draft-westerlund-tsvwg-sctp-crypto-dtls/"
+    title: "IANA's registry for RTP Payload Format Media Types"
+    date: Nov 2023
+
+
 --- abstract
 
+This document closes the IANA Registry for RTP Payload formats Media Types.
 
 --- middle
 
@@ -45,23 +52,28 @@ normative:
 
 # IANA Considerations {#IANA-Consideration}
 
+IANA is requested to add the following missing RTP Payload types to
+the "RTP Payload Format Media Types" registry {{IANA-REG}}.
 
-| Cause Code | Meaning | Reference | Contact |
-| 0 | Error in the Protection Engine List | RFC-To-Be | Authors |
-| 1 | Error During Protection Handshake | RFC-To-Be | Authors|
-| 2 | Failure in Protection Engines Validation | RFC-To-Be | Authors |
-| 3 | Timeout During KEY Handshake or Validation | RFC-To-Be | Authors |
-| 4-65534 | Available for Assignment | RFC-To-Be | Authors |
-| 65535 | Reserved | RFC-To-Be | Authors |
-{: #iana-protection-error-cause title="Protection Error Cause Code" cols="r l l l"}
+| Media Type | Sub Type | Clock Rate (Hz) | Channels (audio) | Reference Reference |
+| video | VP8 | 90000 | | RFC7741 |
+| video | AV1 | 90000 | | https://www.iana.org/assignments/media-types/video/AV1 |
+| video | HEVC | 90000 | | RFC7798 |
+| video | VVC | 90000 | | RFC9328 |
+{: #iana-entries title="Payload Types to Register in RTP Payload Format Media Types" cols="l l l l l"}
+
+IANA is further requested to close the "RTP Payload Format Media
+Types" registry {{IANA-REG}}. IANA should add the following to the note to the registry:
+
+"This registry
 
 
 # Security Considerations {#Security-Considerations}
 
-xs
+This document has no security considerations as it defines an adminstrative rule change.
+
+--- back
 
 # Acknowledgments
 
-   The authors thank Michael Tüxen for his invaluable comments
-   helping to cope with Association Restart, ASCONF handling and
-   restructuring the Protection Engine architecture.
+   The author likes to thank ...
