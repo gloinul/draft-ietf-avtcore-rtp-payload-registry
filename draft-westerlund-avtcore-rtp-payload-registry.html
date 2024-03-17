@@ -4,30 +4,41 @@
 <meta charset="utf-8">
 <meta content="Common,Latin" name="scripts">
 <meta content="initial-scale=1.0" name="viewport">
-<title>Closing the IANA RTP Payload Format Media Type Registry</title>
+<title>Closing the RTP Payload Format Media Types IANA Registry</title>
 <meta content="Magnus Westerlund" name="author">
-<meta content="
-       This document closes the IANA Registry for RTP Payload formats Media Types. 
-    " name="description">
-<meta content="xml2rfc 3.18.2" name="generator">
-<meta content="draft-ietf-avtcore-rtp-payload-registry-latest" name="ietf.draft">
+<meta content='
+       It has been observed that specifications of new RTP Paylaod formats
+forgets to register in the IANA regsitry "RTP Payload formats Media
+Types". In practice this have no real impact. One reason is that the
+Media Types registry is the crucial regsistry to register any Media
+Type to establish the media type used to identified the format in
+various signalling usage. 
+       To resolve this sitaution this document performs the following. First
+it updates the registry to include known RTP Payload formats at the
+time of writing. Then closes the IANA Registry for RTP Payload formats
+Media Types for future registration. Beyond instructing IANA to close
+this registry the instruction to authors in RFC 8088 are updated that
+registration is no longer required in the closed registry. 
+    ' name="description">
+<meta content="xml2rfc 3.20.0" name="generator">
+<meta content="draft-westerlund-avtcore-rtp-payload-registry-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.18.2
-    Python 3.11.6
-    ConfigArgParse 1.5.3
+  xml2rfc 3.20.0
+    Python 3.11.8
+    ConfigArgParse 1.7
     google-i18n-address 3.1.0
     intervaltree 3.1.0
     Jinja2 3.1.2
     lxml 4.9.3
-    platformdirs 3.11.0
+    platformdirs 4.2.0
     pycountry 22.3.5
-    PyYAML 6.0
+    PyYAML 6.0.1
     requests 2.31.0
-    setuptools 67.7.2
+    setuptools 68.2.2
     six 1.16.0
-    wcwidth 0.2.9
+    wcwidth 0.2.13
 -->
-<link href="draft-ietf-avtcore-rtp-payload-registry.xml" rel="alternate" type="application/rfc+xml">
+<link href="draft-westerlund-avtcore-rtp-payload-registry.xml" rel="alternate" type="application/rfc+xml">
 <link href="#copyright" rel="license">
 <style type="text/css">@font-face {
   font-family: 'Lora';
@@ -1023,12 +1034,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <table class="ears">
 <thead><tr>
 <td class="left">Internet-Draft</td>
-<td class="center">Close RTP Payload Registry</td>
-<td class="right">November 2023</td>
+<td class="center">Close RTP Payload Formats Registry</td>
+<td class="right">March 2024</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Westerlund</td>
-<td class="center">Expires 11 May 2024</td>
+<td class="center">Expires 18 September 2024</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1038,18 +1049,18 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dt class="label-workgroup">Workgroup:</dt>
 <dd class="workgroup">AVTCORE</dd>
 <dt class="label-internet-draft">Internet-Draft:</dt>
-<dd class="internet-draft">draft-ietf-avtcore-rtp-payload-registry-latest</dd>
+<dd class="internet-draft">draft-westerlund-avtcore-rtp-payload-registry-latest</dd>
 <dt class="label-updates">Updates:</dt>
 <dd class="updates">
-<a href="https://www.rfc-editor.org/rfc/rfc4855" class="eref">4855</a>, <a href="https://www.rfc-editor.org/rfc/rfc8088" class="eref">8088</a> (if approved)</dd>
+<a href="https://www.rfc-editor.org/rfc/rfc8088" class="eref">8088</a> (if approved)</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2023-11-08" class="published">8 November 2023</time>
+<time datetime="2024-03-17" class="published">17 March 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2024-05-11">11 May 2024</time></dd>
+<dd class="expires"><time datetime="2024-09-18">18 September 2024</time></dd>
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
@@ -1059,10 +1070,21 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </dd>
 </dl>
 </div>
-<h1 id="title">Closing the IANA RTP Payload Format Media Type Registry</h1>
+<h1 id="title">Closing the RTP Payload Format Media Types IANA Registry</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
-<p id="section-abstract-1">This document closes the IANA Registry for RTP Payload formats Media Types.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+<p id="section-abstract-1">It has been observed that specifications of new RTP Paylaod formats
+forgets to register in the IANA regsitry "RTP Payload formats Media
+Types". In practice this have no real impact. One reason is that the
+Media Types registry is the crucial regsistry to register any Media
+Type to establish the media type used to identified the format in
+various signalling usage.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+<p id="section-abstract-2">To resolve this sitaution this document performs the following. First
+it updates the registry to include known RTP Payload formats at the
+time of writing. Then closes the IANA Registry for RTP Payload formats
+Media Types for future registration. Beyond instructing IANA to close
+this registry the instruction to authors in RFC 8088 are updated that
+registration is no longer required in the closed registry.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
 </section>
 <section class="note rfcEditorRemove" id="section-note.1">
       <h2 id="name-about-this-document">
@@ -1070,7 +1092,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
       </h2>
 <p id="section-note.1-1">This note is to be removed before publishing as an RFC.<a href="#section-note.1-1" class="pilcrow">¶</a></p>
 <p id="section-note.1-2">
-        Status information for this document may be found at <span><a href="https://datatracker.ietf.org/doc/draft-ietf-avtcore-rtp-payload-registry/">https://datatracker.ietf.org/doc/draft-ietf-avtcore-rtp-payload-registry/</a></span>.<a href="#section-note.1-2" class="pilcrow">¶</a></p>
+        Status information for this document may be found at <span><a href="https://datatracker.ietf.org/doc/draft-westerlund-avtcore-rtp-payload-registry/">https://datatracker.ietf.org/doc/draft-westerlund-avtcore-rtp-payload-registry/</a></span>.<a href="#section-note.1-2" class="pilcrow">¶</a></p>
 <p id="section-note.1-3">
         Discussion of this document takes place on the
         AVTCORE Working Group mailing list (<span><a href="mailto:avt@ietf.org">mailto:avt@ietf.org</a></span>),
@@ -1098,7 +1120,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 11 May 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 18 September 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1107,7 +1129,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="#name-copyright-notice" class="section-name selfRef">Copyright Notice</a>
         </h2>
 <p id="section-boilerplate.2-1">
-            Copyright (c) 2023 IETF Trust and the persons identified as the
+            Copyright (c) 2024 IETF Trust and the persons identified as the
             document authors. All rights reserved.<a href="#section-boilerplate.2-1" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.2-2">
             This document is subject to BCP 78 and the IETF Trust's Legal
@@ -1134,19 +1156,22 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <p id="section-toc.1-1.2.1" class="keepWithNext"><a href="#section-2" class="auto internal xref">2</a>.  <a href="#name-conventions" class="internal xref">Conventions</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3">
-            <p id="section-toc.1-1.3.1" class="keepWithNext"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-iana-considerations" class="internal xref">IANA Considerations</a></p>
+            <p id="section-toc.1-1.3.1" class="keepWithNext"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-update-to-how-to-write-an-r" class="internal xref">Update to How To Write an RTP Payload Format</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4">
-            <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
+            <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-iana-considerations" class="internal xref">IANA Considerations</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
-            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-normative-references" class="internal xref">Normative References</a></p>
+            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
-            <p id="section-toc.1-1.6.1"><a href="#appendix-A" class="auto internal xref">Appendix A</a>.  <a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
+            <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-normative-references" class="internal xref">Normative References</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7">
-            <p id="section-toc.1-1.7.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-authors-address" class="internal xref">Author's Address</a></p>
+            <p id="section-toc.1-1.7.1"><a href="#appendix-A" class="auto internal xref">Appendix A</a>.  <a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8">
+            <p id="section-toc.1-1.8.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-authors-address" class="internal xref">Author's Address</a></p>
 </li>
         </ul>
 </nav>
@@ -1156,7 +1181,23 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <section id="section-1">
       <h2 id="name-introduction">
 <a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
-    </h2>
+      </h2>
+<p id="section-1-1">It has been observed that specifications of new RTP Paylaod formats
+forgets to register in the IANA regsitry "RTP Payload formats Media
+Types" <span>[<a href="#RTP-FORMATS" class="cite xref">RTP-FORMATS</a>]</span>. In practice this have no real impact. This
+registry are not used for any purposes other than to track which media
+types actually have RTP payload formats. That purpose could be
+addressed through other means.<a href="#section-1-1" class="pilcrow">¶</a></p>
+<p id="section-1-2">It is the Media Types registry <span>[<a href="#MEDIA-TYPES" class="cite xref">MEDIA-TYPES</a>]</span> is the crucial
+regsistry to register any Media Type to establish the media type used
+to identified the format in various signalling usage and avoid
+collisions and for reference of their specification.<a href="#section-1-2" class="pilcrow">¶</a></p>
+<p id="section-1-3">To resolve this sitaution this document performs the following. First
+it updates the registry to include known RTP Payload formats at the
+time of writing. Then closes the IANA Registry for RTP Payload formats
+Media Types for future registration. Beyond instructing IANA to close
+this registry the instruction to authors in <span>[<a href="#RFC8088" class="cite xref">RFC8088</a>]</span> are updated that
+registration in the closed registry is no longer required.<a href="#section-1-3" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="conventions">
@@ -1171,13 +1212,36 @@ described in BCP 14 <span>[<a href="#RFC2119" class="cite xref">RFC2119</a>]</s
 appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="IANA-Consideration">
+<div id="update-to-how-to-write-an-rtp-payload-format">
 <section id="section-3">
-      <h2 id="name-iana-considerations">
-<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
+      <h2 id="name-update-to-how-to-write-an-r">
+<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-update-to-how-to-write-an-r" class="section-name selfRef">Update to How To Write an RTP Payload Format</a>
       </h2>
-<p id="section-3-1">IANA is requested to add the following missing RTP Payload types to
-the "RTP Payload Format Media Types" registry <span>[<a href="#IANA-REG" class="cite xref">IANA-REG</a>]</span>.<a href="#section-3-1" class="pilcrow">¶</a></p>
+<p id="section-3-1">How to write an RTP Payload format <span>[<a href="#RFC8088" class="cite xref">RFC8088</a>]</span> mandates that RTP
+Payload formats shall register in RTP Payload Format media types:<a href="#section-3-1" class="pilcrow">¶</a></p>
+<p id="section-3-2">"Since all RTP payload formats contain a media type specification,
+they also need an IANA Considerations section.  The media type name
+must be registered, and this is done by requesting that IANA register
+that media name.  When that registration request is written, it shall
+also be requested that the media type is included under the "RTP
+Payload Format media types" subregistry of the RTP registry
+(http://www.iana.org/assignments/rtp-parameters)."<a href="#section-3-2" class="pilcrow">¶</a></p>
+<p id="section-3-3">This paragraph is changed to the following:<a href="#section-3-3" class="pilcrow">¶</a></p>
+<p id="section-3-4">"Since all RTP payload formats contain a media type specification,
+they also need an IANA Considerations section.  The media type name
+must be registered, and this is done by requesting that IANA register
+that media name."<a href="#section-3-4" class="pilcrow">¶</a></p>
+<p id="section-3-5">Thus removing the need to register in the "RTP
+Payload Format media types".<a href="#section-3-5" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="IANA-Consideration">
+<section id="section-4">
+      <h2 id="name-iana-considerations">
+<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
+      </h2>
+<p id="section-4-1">IANA is requested to add the following missing RTP Payload types to
+the "RTP Payload Format Media Types" registry <span>[<a href="#RTP-FORMATS" class="cite xref">RTP-FORMATS</a>]</span>.<a href="#section-4-1" class="pilcrow">¶</a></p>
 <span id="name-payload-types-to-register-i"></span><div id="iana-entries">
 <table class="center" id="table-1">
         <caption>
@@ -1225,23 +1289,29 @@ the "RTP Payload Format Media Types" registry <span>[<a href="#IANA-REG" class="
         </tbody>
       </table>
 </div>
-<p id="section-3-3">IANA is further requested to close the "RTP Payload Format Media
-Types" registry <span>[<a href="#IANA-REG" class="cite xref">IANA-REG</a>]</span>. IANA should add the following to the note to the registry:<a href="#section-3-3" class="pilcrow">¶</a></p>
-<p id="section-3-4">"This registry<a href="#section-3-4" class="pilcrow">¶</a></p>
+<p id="section-4-3">IANA is further requested to close the "RTP Payload Format Media
+Types" registry <span>[<a href="#RTP-FORMATS" class="cite xref">RTP-FORMATS</a>]</span> for any further registrations. IANA
+should add the following to the note to the registry:<a href="#section-4-3" class="pilcrow">¶</a></p>
+<p id="section-4-4">"This registry has been closed as it was considered redundant as all
+RTP Payload formats are part of the Media Types registry
+(https://www.iana.org/assignments/media-types/media-types.xhtml). For
+further motivation see (RFC-TBD1)."<a href="#section-4-4" class="pilcrow">¶</a></p>
+<p id="section-4-5">RFC-Editor Note: Please replace RFC-TBD1 with the RFC number of this
+specification and then remove this note.<a href="#section-4-5" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="Security-Considerations">
-<section id="section-4">
+<section id="section-5">
       <h2 id="name-security-considerations">
-<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
+<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
       </h2>
-<p id="section-4-1">This document has no security considerations as it defines an adminstrative rule change.<a href="#section-4-1" class="pilcrow">¶</a></p>
+<p id="section-5-1">This document has no security considerations as it defines an adminstrative rule change.<a href="#section-5-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="sec-normative-references">
-<section id="section-5">
+<section id="section-6">
       <h2 id="name-normative-references">
-<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
+<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
       </h2>
 <dl class="references">
 <dt id="RFC2119">[RFC2119]</dt>
@@ -1256,9 +1326,13 @@ Types" registry <span>[<a href="#IANA-REG" class="cite xref">IANA-REG</a>]</span
       <dd>
 <span class="refAuthor">Westerlund, M.</span>, <span class="refTitle">"How to Write an RTP Payload Format"</span>, <span class="seriesInfo">RFC 8088</span>, <span class="seriesInfo">DOI 10.17487/RFC8088</span>, <time datetime="2017-05" class="refDate">May 2017</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc8088">https://www.rfc-editor.org/info/rfc8088</a>&gt;</span>. </dd>
 <dd class="break"></dd>
-<dt id="IANA-REG">[IANA-REG]</dt>
+<dt id="RTP-FORMATS">[RTP-FORMATS]</dt>
       <dd>
-<span class="refTitle">"IANA's registry for RTP Payload Format Media Types"</span>, <time datetime="2023-11" class="refDate">November 2023</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/draft-westerlund-tsvwg-sctp-crypto-dtls/">https://datatracker.ietf.org/doc/draft-westerlund-tsvwg-sctp-crypto-dtls/</a>&gt;</span>. </dd>
+<span class="refTitle">"IANA's registry for RTP Payload Format Media Types"</span>, <time datetime="2023-11" class="refDate">November 2023</time>, <span>&lt;<a href="https://www.iana.org/assignments/rtp-parameters/rtp-parameters.xhtml#rtp-parameters-2">https://www.iana.org/assignments/rtp-parameters/rtp-parameters.xhtml#rtp-parameters-2</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="MEDIA-TYPES">[MEDIA-TYPES]</dt>
+      <dd>
+<span class="refTitle">"IANA's registry for Media Types"</span>, <time datetime="2023-11" class="refDate">November 2023</time>, <span>&lt;<a href="https://www.iana.org/assignments/media-types/media-types.xhtml">https://www.iana.org/assignments/media-types/media-types.xhtml</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC8174">[RFC8174]</dt>
     <dd>
