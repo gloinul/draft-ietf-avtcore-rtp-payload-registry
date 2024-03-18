@@ -4,9 +4,9 @@
 
 AVTCORE                                                    M. Westerlund
 Internet-Draft                                                  Ericsson
-Updates: 8088 (if approved)                                17 March 2024
+Updates: 8088 (if approved)                                18 March 2024
 Intended status: Standards Track                                        
-Expires: 18 September 2024
+Expires: 19 September 2024
 
 
         Closing the RTP Payload Format Media Types IANA Registry
@@ -60,7 +60,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 18 September 2024.
+   This Internet-Draft will expire on 19 September 2024.
 
 Copyright Notice
 
@@ -108,6 +108,12 @@ Table of Contents
    to close this registry the instruction to authors in [RFC8088] are
    updated that registration in the closed registry is no longer
    required.
+
+   It is unclear how the "RTP Payload formats Media Types" [RTP-FORMATS]
+   registry came into existance.  We have been unable to find any RFC
+   that defines its existance.  It is likely this was created based on
+   email or AD request.  Thus, there are no known existing specification
+   for the registry that needs to be updated when closing the registry.
 
 2.  Conventions
 
