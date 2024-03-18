@@ -78,6 +78,13 @@ Media Types for future registration. Beyond instructing IANA to close
 this registry the instruction to authors in {{RFC8088}} are updated that
 registration in the closed registry is no longer required.
 
+It is unclear how the "RTP Payload formats Media Types"
+{{RTP-FORMATS}} registry came into existance. We have been unable to
+find any RFC that defines its existance. It is likely this was created
+based on email or AD request. Thus, there are no known existing
+specification for the registry that needs to be updated when closing
+the registry.
+
 # Conventions
 
 {::boilerplate bcp14}
