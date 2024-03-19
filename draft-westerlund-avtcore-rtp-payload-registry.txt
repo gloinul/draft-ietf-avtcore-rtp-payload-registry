@@ -4,9 +4,9 @@
 
 AVTCORE                                                    M. Westerlund
 Internet-Draft                                                  Ericsson
-Updates: 8088 (if approved)                                18 March 2024
+Updates: 8088 (if approved)                                19 March 2024
 Intended status: Standards Track                                        
-Expires: 19 September 2024
+Expires: 20 September 2024
 
 
         Closing the RTP Payload Format Media Types IANA Registry
@@ -60,7 +60,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 19 September 2024.
+   This Internet-Draft will expire on 20 September 2024.
 
 Copyright Notice
 
@@ -110,10 +110,14 @@ Table of Contents
    required.
 
    It is unclear how the "RTP Payload formats Media Types" [RTP-FORMATS]
-   registry came into existance.  We have been unable to find any RFC
-   that defines its existance.  It is likely this was created based on
-   email or AD request.  Thus, there are no known existing specification
-   for the registry that needs to be updated when closing the registry.
+   registry came into existance.  The registry is referencing [RFC4855]
+   as the instructions to this registry.  However, reviewing that RFC we
+   have been unable to find any text that defines its purpose and rules.
+   Further attempts to find how the registry was created have failed to
+   find any reference to its creation.  It is likely this was created
+   based on email or AD request.  Thus, there are no known existing
+   specification for the registry that needs to be updated when closing
+   the registry.
 
 2.  Conventions
 
@@ -192,6 +196,10 @@ Table of Contents
               Requirement Levels", BCP 14, RFC 2119,
               DOI 10.17487/RFC2119, March 1997,
               <https://www.rfc-editor.org/info/rfc2119>.
+
+   [RFC4855]  Casner, S., "Media Type Registration of RTP Payload
+              Formats", RFC 4855, DOI 10.17487/RFC4855, February 2007,
+              <https://www.rfc-editor.org/info/rfc4855>.
 
    [RFC8088]  Westerlund, M., "How to Write an RTP Payload Format",
               RFC 8088, DOI 10.17487/RFC8088, May 2017,
