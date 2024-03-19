@@ -26,6 +26,7 @@ informative:
 
 normative:
   RFC2119:
+  RFC4855:
   RFC8088:
 
   RTP-FORMATS:
@@ -79,11 +80,14 @@ this registry the instruction to authors in {{RFC8088}} are updated that
 registration in the closed registry is no longer required.
 
 It is unclear how the "RTP Payload formats Media Types"
-{{RTP-FORMATS}} registry came into existance. We have been unable to
-find any RFC that defines its existance. It is likely this was created
-based on email or AD request. Thus, there are no known existing
-specification for the registry that needs to be updated when closing
-the registry.
+{{RTP-FORMATS}} registry came into existance. The registry is
+referencing {{RFC4855}} as the instructions to this registry. However,
+reviewing that RFC we have been unable to find any text that defines
+its purpose and rules. Further attempts to find how the registry was
+created have failed to find any reference to its creation. It is
+likely this was created based on email or AD request. Thus, there are
+no known existing specification for the registry that needs to be
+updated when closing the registry.
 
 # Conventions
 
