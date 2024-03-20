@@ -221,7 +221,8 @@ Table of Contents
 
 Appendix A.  Acknowledgments
 
-   The author likes to thank ...
+   The author likes to thank Jonathan Lennox for review and editorial
+   fixes.
 
 Author's Address
 
