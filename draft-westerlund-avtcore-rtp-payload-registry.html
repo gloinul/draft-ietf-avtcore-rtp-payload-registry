@@ -7,17 +7,17 @@
 <title>Closing the RTP Payload Format Media Types IANA Registry</title>
 <meta content="Magnus Westerlund" name="author">
 <meta content='
-       It has been observed that specifications of new RTP Paylaod formats
-forgets to register in the IANA regsitry "RTP Payload formats Media
-Types". In practice this have no real impact. One reason is that the
+       It has been observed that specifications of new RTP payload formats often
+forget to register themselves in the IANA regsitry "RTP Payload Formats Media
+Types". In practice this has no real impact. One reason is that the
 Media Types registry is the crucial regsistry to register any Media
 Type to establish the media type used to identified the format in
 various signalling usage. 
        To resolve this sitaution this document performs the following. First
-it updates the registry to include known RTP Payload formats at the
-time of writing. Then closes the IANA Registry for RTP Payload formats
+it updates the registry to include known RTP payload formats at the
+time of writing. Then it closes the IANA Registry for RTP Payload formats
 Media Types for future registration. Beyond instructing IANA to close
-this registry the instruction to authors in RFC 8088 are updated that
+this registry the instructions to authors in RFC 8088 are updated that
 registration is no longer required in the closed registry. 
     ' name="description">
 <meta content="xml2rfc 3.20.1" name="generator">
@@ -1039,7 +1039,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Westerlund</td>
-<td class="center">Expires 20 September 2024</td>
+<td class="center">Expires 21 September 2024</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1055,12 +1055,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="https://www.rfc-editor.org/rfc/rfc8088" class="eref">8088</a> (if approved)</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2024-03-19" class="published">19 March 2024</time>
+<time datetime="2024-03-20" class="published">20 March 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2024-09-20">20 September 2024</time></dd>
+<dd class="expires"><time datetime="2024-09-21">21 September 2024</time></dd>
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
@@ -1073,17 +1073,17 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <h1 id="title">Closing the RTP Payload Format Media Types IANA Registry</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
-<p id="section-abstract-1">It has been observed that specifications of new RTP Paylaod formats
-forgets to register in the IANA regsitry "RTP Payload formats Media
-Types". In practice this have no real impact. One reason is that the
+<p id="section-abstract-1">It has been observed that specifications of new RTP payload formats often
+forget to register themselves in the IANA regsitry "RTP Payload Formats Media
+Types". In practice this has no real impact. One reason is that the
 Media Types registry is the crucial regsistry to register any Media
 Type to establish the media type used to identified the format in
 various signalling usage.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
 <p id="section-abstract-2">To resolve this sitaution this document performs the following. First
-it updates the registry to include known RTP Payload formats at the
-time of writing. Then closes the IANA Registry for RTP Payload formats
+it updates the registry to include known RTP payload formats at the
+time of writing. Then it closes the IANA Registry for RTP Payload formats
 Media Types for future registration. Beyond instructing IANA to close
-this registry the instruction to authors in RFC 8088 are updated that
+this registry the instructions to authors in RFC 8088 are updated that
 registration is no longer required in the closed registry.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
 </section>
 <section class="note rfcEditorRemove" id="section-note.1">
@@ -1120,7 +1120,7 @@ registration is no longer required in the closed registry.<a href="#section-abst
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 20 September 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 21 September 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1182,30 +1182,30 @@ registration is no longer required in the closed registry.<a href="#section-abst
       <h2 id="name-introduction">
 <a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
       </h2>
-<p id="section-1-1">It has been observed that specifications of new RTP Paylaod formats
-forgets to register in the IANA regsitry "RTP Payload formats Media
-Types" <span>[<a href="#RTP-FORMATS" class="cite xref">RTP-FORMATS</a>]</span>. In practice this have no real impact. This
-registry are not used for any purposes other than to track which media
+<p id="section-1-1">It has been observed that specifications of new RTP payload formats often
+forget to register themselves in the IANA regsitry "RTP Payload formats Media
+Types" <span>[<a href="#RTP-FORMATS" class="cite xref">RTP-FORMATS</a>]</span>. In practice this has no real impact. This
+registry is not used for any purpose other than to track which media
 types actually have RTP payload formats. That purpose could be
 addressed through other means.<a href="#section-1-1" class="pilcrow">¶</a></p>
-<p id="section-1-2">It is the Media Types registry <span>[<a href="#MEDIA-TYPES" class="cite xref">MEDIA-TYPES</a>]</span> is the crucial
+<p id="section-1-2">The Media Types registry <span>[<a href="#MEDIA-TYPES" class="cite xref">MEDIA-TYPES</a>]</span> is the crucial
 regsistry to register any Media Type to establish the media type used
-to identified the format in various signalling usage and avoid
-collisions and for reference of their specification.<a href="#section-1-2" class="pilcrow">¶</a></p>
-<p id="section-1-3">To resolve this sitaution this document performs the following. First
-it updates the registry to include known RTP Payload formats at the
-time of writing. Then closes the IANA Registry for RTP Payload formats
+to identify the format in various signalling usage, to avoid
+collisions, and to reference their specifications.<a href="#section-1-2" class="pilcrow">¶</a></p>
+<p id="section-1-3">To resolve this sitaution, this document performs the following actions. First,
+it updates the registry to include known RTP payload formats at the
+time of writing. Then, it closes the IANA Registry for RTP Payload Formats
 Media Types for future registration. Beyond instructing IANA to close
-this registry the instruction to authors in <span>[<a href="#RFC8088" class="cite xref">RFC8088</a>]</span> are updated that
+this registry, the instructions to authors in <span>[<a href="#RFC8088" class="cite xref">RFC8088</a>]</span> are updated so that
 registration in the closed registry is no longer required.<a href="#section-1-3" class="pilcrow">¶</a></p>
 <p id="section-1-4">It is unclear how the "RTP Payload formats Media Types"
-<span>[<a href="#RTP-FORMATS" class="cite xref">RTP-FORMATS</a>]</span> registry came into existance. The registry is
-referencing <span>[<a href="#RFC4855" class="cite xref">RFC4855</a>]</span> as the instructions to this registry. However,
+<span>[<a href="#RTP-FORMATS" class="cite xref">RTP-FORMATS</a>]</span> registry came into existance. The registry
+references <span>[<a href="#RFC4855" class="cite xref">RFC4855</a>]</span> as the instructions for this registry. However,
 reviewing that RFC we have been unable to find any text that defines
 its purpose and rules. Further attempts to find how the registry was
 created have failed to find any reference to its creation. It is
-likely this was created based on email or AD request. Thus, there are
-no known existing specification for the registry that needs to be
+likely this was created based on email or AD request. Thus, there is
+no known existing specification for this registry that needs to be
 updated when closing the registry.<a href="#section-1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
