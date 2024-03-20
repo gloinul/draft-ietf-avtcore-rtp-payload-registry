@@ -149,4 +149,4 @@ This document has no security considerations as it defines an adminstrative rule
 
 # Acknowledgments
 
-   The author likes to thank ...
+   The author likes to thank Jonathan Lennox for review and editorial fixes.
