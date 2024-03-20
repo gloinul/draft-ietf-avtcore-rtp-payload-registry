@@ -42,51 +42,51 @@ normative:
 
 --- abstract
 
-It has been observed that specifications of new RTP Paylaod formats
-forgets to register in the IANA regsitry "RTP Payload formats Media
-Types". In practice this have no real impact. One reason is that the
+It has been observed that specifications of new RTP payload formats often
+forget to register themselves in the IANA regsitry "RTP Payload Formats Media
+Types". In practice this has no real impact. One reason is that the
 Media Types registry is the crucial regsistry to register any Media
 Type to establish the media type used to identified the format in
 various signalling usage.
 
 To resolve this sitaution this document performs the following. First
-it updates the registry to include known RTP Payload formats at the
-time of writing. Then closes the IANA Registry for RTP Payload formats
+it updates the registry to include known RTP payload formats at the
+time of writing. Then it closes the IANA Registry for RTP Payload formats
 Media Types for future registration. Beyond instructing IANA to close
-this registry the instruction to authors in RFC 8088 are updated that
+this registry the instructions to authors in RFC 8088 are updated that
 registration is no longer required in the closed registry.
 
 --- middle
 
 # Introduction {#introduction}
 
-It has been observed that specifications of new RTP Paylaod formats
-forgets to register in the IANA regsitry "RTP Payload formats Media
-Types" {{RTP-FORMATS}}. In practice this have no real impact. This
-registry are not used for any purposes other than to track which media
+It has been observed that specifications of new RTP payload formats often
+forget to register themselves in the IANA regsitry "RTP Payload formats Media
+Types" {{RTP-FORMATS}}. In practice this has no real impact. This
+registry is not used for any purpose other than to track which media
 types actually have RTP payload formats. That purpose could be
 addressed through other means.
 
-It is the Media Types registry {{MEDIA-TYPES}} is the crucial
+The Media Types registry {{MEDIA-TYPES}} is the crucial
 regsistry to register any Media Type to establish the media type used
-to identified the format in various signalling usage and avoid
-collisions and for reference of their specification.
+to identify the format in various signalling usage, to avoid
+collisions, and to reference their specifications.
 
-To resolve this sitaution this document performs the following. First
-it updates the registry to include known RTP Payload formats at the
-time of writing. Then closes the IANA Registry for RTP Payload formats
+To resolve this sitaution, this document performs the following actions. First,
+it updates the registry to include known RTP payload formats at the
+time of writing. Then, it closes the IANA Registry for RTP Payload Formats
 Media Types for future registration. Beyond instructing IANA to close
-this registry the instruction to authors in {{RFC8088}} are updated that
+this registry, the instructions to authors in {{RFC8088}} are updated so that
 registration in the closed registry is no longer required.
 
 It is unclear how the "RTP Payload formats Media Types"
-{{RTP-FORMATS}} registry came into existance. The registry is
-referencing {{RFC4855}} as the instructions to this registry. However,
+{{RTP-FORMATS}} registry came into existance. The registry
+references {{RFC4855}} as the instructions for this registry. However,
 reviewing that RFC we have been unable to find any text that defines
 its purpose and rules. Further attempts to find how the registry was
 created have failed to find any reference to its creation. It is
-likely this was created based on email or AD request. Thus, there are
-no known existing specification for the registry that needs to be
+likely this was created based on email or AD request. Thus, there is
+no known existing specification for this registry that needs to be
 updated when closing the registry.
 
 # Conventions
