@@ -43,13 +43,13 @@ normative:
 --- abstract
 
 It has been observed that specifications of new RTP payload formats often
-forget to register themselves in the IANA regsitry "RTP Payload Formats Media
+forget to register themselves in the IANA registry "RTP Payload Formats Media
 Types". In practice this has no real impact. One reason is that the
-Media Types registry is the crucial regsistry to register any Media
+Media Types registry is the crucial registry to register any Media
 Type to establish the media type used to identified the format in
 various signaling usage.
 
-To resolve this sitaution this document performs the following. First
+To resolve this situation this document performs the following. First
 it updates the registry to include known RTP payload formats at the
 time of writing. Then it closes the IANA Registry for RTP Payload formats
 Media Types for future registration. Beyond instructing IANA to close
@@ -61,18 +61,18 @@ registration is no longer required in the closed registry.
 # Introduction {#introduction}
 
 It has been observed that specifications of new RTP payload formats often
-forget to register themselves in the IANA regsitry "RTP Payload formats Media
+forget to register themselves in the IANA registry "RTP Payload formats Media
 Types" {{RTP-FORMATS}}. In practice this has no real impact. This
 registry is not used for any purpose other than to track which media
 types actually have RTP payload formats. That purpose could be
 addressed through other means.
 
 The Media Types registry {{MEDIA-TYPES}} is the crucial
-regsistry to register any Media Type to establish the media type used
+registry to register any Media Type to establish the media type used
 to identify the format in various signalling usage, to avoid
 collisions, and to reference their specifications.
 
-To resolve this sitaution, this document performs the following actions. First,
+To resolve this situation, this document performs the following actions. First,
 it updates the registry to include known RTP payload formats at the
 time of writing. Then, it closes the IANA Registry for RTP Payload Formats
 Media Types for future registration. Beyond instructing IANA to close
@@ -80,7 +80,7 @@ this registry, the instructions to authors in {{RFC8088}} are updated so that
 registration in the closed registry is no longer required.
 
 It is unclear how the "RTP Payload formats Media Types"
-{{RTP-FORMATS}} registry came into existance. The registry
+{{RTP-FORMATS}} registry came into existence. The registry
 references {{RFC4855}} as the instructions for this registry. However,
 reviewing that RFC we have been unable to find any text that defines
 its purpose and rules. Further attempts to find how the registry was
@@ -104,7 +104,7 @@ they also need an IANA Considerations section.  The media type name
 must be registered, and this is done by requesting that IANA register
 that media name.  When that registration request is written, it shall
 also be requested that the media type is included under the "RTP
-Payload Format media types" subregistry of the RTP registry
+Payload Format media types" sub-registry of the RTP registry
 (http://www.iana.org/assignments/rtp-parameters)."
 
 This paragraph is changed to the following:
@@ -143,7 +143,7 @@ specification and then remove this note.
 
 # Security Considerations {#Security-Considerations}
 
-This document has no security considerations as it defines an adminstrative rule change.
+This document has no security considerations as it defines an administrative rule change.
 
 --- back
 
