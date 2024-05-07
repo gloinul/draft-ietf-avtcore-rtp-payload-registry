@@ -47,7 +47,7 @@ forget to register themselves in the IANA regsitry "RTP Payload Formats Media
 Types". In practice this has no real impact. One reason is that the
 Media Types registry is the crucial regsistry to register any Media
 Type to establish the media type used to identified the format in
-various signalling usage.
+various signaling usage.
 
 To resolve this sitaution this document performs the following. First
 it updates the registry to include known RTP payload formats at the
@@ -149,4 +149,4 @@ This document has no security considerations as it defines an adminstrative rule
 
 # Acknowledgments
 
-   The author likes to thank Jonathan Lennox for review and editorial fixes.
+   The author likes to thank Jonathan Lennox and Hyunsik Yang for review and editorial fixes.
