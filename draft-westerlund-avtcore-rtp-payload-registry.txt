@@ -4,9 +4,9 @@
 
 AVTCORE                                                    M. Westerlund
 Internet-Draft                                                  Ericsson
-Updates: 8088 (if approved)                                20 March 2024
+Updates: 8088 (if approved)                                   7 May 2024
 Intended status: Standards Track                                        
-Expires: 21 September 2024
+Expires: 8 November 2024
 
 
         Closing the RTP Payload Format Media Types IANA Registry
@@ -15,13 +15,13 @@ Expires: 21 September 2024
 Abstract
 
    It has been observed that specifications of new RTP payload formats
-   often forget to register themselves in the IANA regsitry "RTP Payload
+   often forget to register themselves in the IANA registry "RTP Payload
    Formats Media Types".  In practice this has no real impact.  One
-   reason is that the Media Types registry is the crucial regsistry to
+   reason is that the Media Types registry is the crucial registry to
    register any Media Type to establish the media type used to
-   identified the format in various signalling usage.
+   identified the format in various signaling usage.
 
-   To resolve this sitaution this document performs the following.
+   To resolve this situation this document performs the following.
    First it updates the registry to include known RTP payload formats at
    the time of writing.  Then it closes the IANA Registry for RTP
    Payload formats Media Types for future registration.  Beyond
@@ -60,7 +60,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 21 September 2024.
+   This Internet-Draft will expire on 8 November 2024.
 
 Copyright Notice
 
@@ -90,18 +90,18 @@ Table of Contents
 1.  Introduction
 
    It has been observed that specifications of new RTP payload formats
-   often forget to register themselves in the IANA regsitry "RTP Payload
+   often forget to register themselves in the IANA registry "RTP Payload
    formats Media Types" [RTP-FORMATS].  In practice this has no real
    impact.  This registry is not used for any purpose other than to
    track which media types actually have RTP payload formats.  That
    purpose could be addressed through other means.
 
-   The Media Types registry [MEDIA-TYPES] is the crucial regsistry to
+   The Media Types registry [MEDIA-TYPES] is the crucial registry to
    register any Media Type to establish the media type used to identify
    the format in various signalling usage, to avoid collisions, and to
    reference their specifications.
 
-   To resolve this sitaution, this document performs the following
+   To resolve this situation, this document performs the following
    actions.  First, it updates the registry to include known RTP payload
    formats at the time of writing.  Then, it closes the IANA Registry
    for RTP Payload Formats Media Types for future registration.  Beyond
@@ -110,7 +110,7 @@ Table of Contents
    is no longer required.
 
    It is unclear how the "RTP Payload formats Media Types" [RTP-FORMATS]
-   registry came into existance.  The registry references [RFC4855] as
+   registry came into existence.  The registry references [RFC4855] as
    the instructions for this registry.  However, reviewing that RFC we
    have been unable to find any text that defines its purpose and rules.
    Further attempts to find how the registry was created have failed to
@@ -137,7 +137,7 @@ Table of Contents
    must be registered, and this is done by requesting that IANA register
    that media name.  When that registration request is written, it shall
    also be requested that the media type is included under the "RTP
-   Payload Format media types" subregistry of the RTP registry
+   Payload Format media types" sub-registry of the RTP registry
    (http://www.iana.org/assignments/rtp-parameters)."
 
    This paragraph is changed to the following:
@@ -188,7 +188,7 @@ Table of Contents
 5.  Security Considerations
 
    This document has no security considerations as it defines an
-   adminstrative rule change.
+   administrative rule change.
 
 6.  Normative References
 
@@ -221,8 +221,8 @@ Table of Contents
 
 Appendix A.  Acknowledgments
 
-   The author likes to thank Jonathan Lennox for review and editorial
-   fixes.
+   The author likes to thank Jonathan Lennox and Hyunsik Yang for review
+   and editorial fixes.
 
 Author's Address
 
