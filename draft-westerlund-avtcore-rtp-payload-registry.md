@@ -122,7 +122,7 @@ Payload Format media types".
 IANA is requested to add the following missing RTP Payload types to
 the "RTP Payload Format Media Types" registry {{RTP-FORMATS}}.
 
-| Media Type | Sub Type | Clock Rate (Hz) | Channels (audio) | Reference Reference |
+| Media Type | Sub Type | Clock Rate (Hz) | Channels (audio) | Reference |
 | video | VP8 | 90000 | | RFC7741 |
 | video | AV1 | 90000 | | https://www.iana.org/assignments/media-types/video/AV1 |
 | video | HEVC | 90000 | | RFC7798 |
