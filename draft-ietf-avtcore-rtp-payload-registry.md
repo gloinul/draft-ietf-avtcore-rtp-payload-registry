@@ -1,5 +1,5 @@
 ---
-docname: draft-westerlund-avtcore-rtp-payload-registry-latest
+docname: draft-ietf-avtcore-rtp-payload-registry-latest
 title: Closing the RTP Payload Format Media Types IANA Registry
 abbrev: Close RTP Payload Formats Registry
 updates: 8088
@@ -51,10 +51,10 @@ various signaling usage.
 
 To resolve this situation this document performs the following. First
 it updates the registry to include known RTP payload formats at the
-time of writing. Then it closes the IANA Registry for RTP Payload formats
-Media Types for future registration. Beyond instructing IANA to close
-this registry the instructions to authors in RFC 8088 are updated that
-registration is no longer required in the closed registry.
+time of writing. Then it closes the IANA Registry for RTP Payload
+formats Media Types for future registration. Beyond instructing IANA
+to close this registry, the instructions to authors in RFC 8088 are
+updated to reflect this.
 
 --- middle
 
