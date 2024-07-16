@@ -4,13 +4,13 @@
 
 AVTCORE                                                    M. Westerlund
 Internet-Draft                                                  Ericsson
-Updates: 8088 (if approved)                                  21 May 2024
+Updates: 8088 (if approved)                                 16 July 2024
 Intended status: Standards Track                                        
-Expires: 22 November 2024
+Expires: 17 January 2025
 
 
         Closing the RTP Payload Format Media Types IANA Registry
-          draft-westerlund-avtcore-rtp-payload-registry-latest
+             draft-ietf-avtcore-rtp-payload-registry-latest
 
 Abstract
 
@@ -25,17 +25,16 @@ Abstract
    First it updates the registry to include known RTP payload formats at
    the time of writing.  Then it closes the IANA Registry for RTP
    Payload formats Media Types for future registration.  Beyond
-   instructing IANA to close this registry the instructions to authors
-   in RFC 8088 are updated that registration is no longer required in
-   the closed registry.
+   instructing IANA to close this registry, the instructions to authors
+   in RFC 8088 are updated to reflect this.
 
 About This Document
 
    This note is to be removed before publishing as an RFC.
 
    Status information for this document may be found at
-   https://datatracker.ietf.org/doc/draft-westerlund-avtcore-rtp-
-   payload-registry/.
+   https://datatracker.ietf.org/doc/draft-ietf-avtcore-rtp-payload-
+   registry/.
 
    Discussion of this document takes place on the AVTCORE Working Group
    mailing list (mailto:avt@ietf.org), which is archived at
@@ -60,7 +59,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 22 November 2024.
+   This Internet-Draft will expire on 17 January 2025.
 
 Copyright Notice
 
