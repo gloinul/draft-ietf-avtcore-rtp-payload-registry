@@ -22,11 +22,11 @@ author:
    email: magnus.westerlund@ericsson.com
 
 informative:
+  RFC4855:
 
 
 normative:
   RFC2119:
-  RFC4855:
   RFC8088:
 
   RTP-FORMATS:
@@ -38,6 +38,7 @@ normative:
     target: "https://www.iana.org/assignments/media-types/media-types.xhtml"
     title: "IANA's registry for Media Types"
     date: Nov 2023
+
 
 
 --- abstract
@@ -77,7 +78,7 @@ it updates the registry to include known RTP payload formats at the
 time of writing. Then, it closes the IANA Registry for RTP Payload Formats
 Media Types for future registration. Beyond instructing IANA to close
 this registry, the instructions to authors in {{RFC8088}} are updated so that
-registration in the closed registry is no longer required.
+registration in the closed registry is no longer mentioned.
 
 It is unclear how the "RTP Payload formats Media Types"
 {{RTP-FORMATS}} registry came into existence. The registry
