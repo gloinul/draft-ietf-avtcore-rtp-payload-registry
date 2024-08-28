@@ -4,9 +4,9 @@
 
 AVTCORE                                                    M. Westerlund
 Internet-Draft                                                  Ericsson
-Updates: 8088 (if approved)                                 16 July 2024
+Updates: 8088 (if approved)                               28 August 2024
 Intended status: Standards Track                                        
-Expires: 17 January 2025
+Expires: 1 March 2025
 
 
         Closing the RTP Payload Format Media Types IANA Registry
@@ -59,7 +59,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 17 January 2025.
+   This Internet-Draft will expire on 1 March 2025.
 
 Copyright Notice
 
@@ -82,7 +82,9 @@ Table of Contents
    3.  Update to How To Write an RTP Payload Format
    4.  IANA Considerations
    5.  Security Considerations
-   6.  Normative References
+   6.  References
+     6.1.  Normative References
+     6.2.  Informative References
    Appendix A.  Acknowledgments
    Author's Address
 
@@ -106,7 +108,7 @@ Table of Contents
    for RTP Payload Formats Media Types for future registration.  Beyond
    instructing IANA to close this registry, the instructions to authors
    in [RFC8088] are updated so that registration in the closed registry
-   is no longer required.
+   is no longer mentioned.
 
    It is unclear how the "RTP Payload formats Media Types" [RTP-FORMATS]
    registry came into existence.  The registry references [RFC4855] as
@@ -189,16 +191,14 @@ Table of Contents
    This document has no security considerations as it defines an
    administrative rule change.
 
-6.  Normative References
+6.  References
+
+6.1.  Normative References
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
               DOI 10.17487/RFC2119, March 1997,
               <https://www.rfc-editor.org/info/rfc2119>.
-
-   [RFC4855]  Casner, S., "Media Type Registration of RTP Payload
-              Formats", RFC 4855, DOI 10.17487/RFC4855, February 2007,
-              <https://www.rfc-editor.org/info/rfc4855>.
 
    [RFC8088]  Westerlund, M., "How to Write an RTP Payload Format",
               RFC 8088, DOI 10.17487/RFC8088, May 2017,
@@ -217,6 +217,12 @@ Table of Contents
    [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/info/rfc8174>.
+
+6.2.  Informative References
+
+   [RFC4855]  Casner, S., "Media Type Registration of RTP Payload
+              Formats", RFC 4855, DOI 10.17487/RFC4855, February 2007,
+              <https://www.rfc-editor.org/info/rfc4855>.
 
 Appendix A.  Acknowledgments
 

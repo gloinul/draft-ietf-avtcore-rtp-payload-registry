@@ -20,10 +20,10 @@ formats Media Types for future registration. Beyond instructing IANA
 to close this registry, the instructions to authors in RFC 8088 are
 updated to reflect this. 
     ' name="description">
-<meta content="xml2rfc 3.22.0" name="generator">
+<meta content="xml2rfc 3.23.0" name="generator">
 <meta content="draft-ietf-avtcore-rtp-payload-registry-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.22.0
+  xml2rfc 3.23.0
     Python 3.12.3
     ConfigArgParse 1.7
     google-i18n-address 3.1.0
@@ -34,7 +34,7 @@ updated to reflect this.
     pycountry 22.3.5
     PyYAML 6.0.1
     requests 2.32.3
-    setuptools 69.5.1
+    setuptools 70.3.0
     wcwidth 0.2.13
 -->
 <link href="draft-ietf-avtcore-rtp-payload-registry.xml" rel="alternate" type="application/rfc+xml">
@@ -1034,11 +1034,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">Close RTP Payload Formats Registry</td>
-<td class="right">July 2024</td>
+<td class="right">August 2024</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Westerlund</td>
-<td class="center">Expires 17 January 2025</td>
+<td class="center">Expires 1 March 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1054,12 +1054,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="https://www.rfc-editor.org/rfc/rfc8088" class="eref">8088</a> (if approved)</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2024-07-16" class="published">16 July 2024</time>
+<time datetime="2024-08-28" class="published">28 August 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-01-17">17 January 2025</time></dd>
+<dd class="expires"><time datetime="2025-03-01">1 March 2025</time></dd>
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
@@ -1119,7 +1119,7 @@ updated to reflect this.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 17 January 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 1 March 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1164,7 +1164,15 @@ updated to reflect this.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
             <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
-            <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-normative-references" class="internal xref">Normative References</a></p>
+            <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-references" class="internal xref">References</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.1">
+                <p id="section-toc.1-1.6.2.1.1"><a href="#section-6.1" class="auto internal xref">6.1</a>.  <a href="#name-normative-references" class="internal xref">Normative References</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.2">
+                <p id="section-toc.1-1.6.2.2.1"><a href="#section-6.2" class="auto internal xref">6.2</a>.  <a href="#name-informative-references" class="internal xref">Informative References</a></p>
+</li>
+            </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7">
             <p id="section-toc.1-1.7.1"><a href="#appendix-A" class="auto internal xref">Appendix A</a>.  <a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
@@ -1196,7 +1204,7 @@ it updates the registry to include known RTP payload formats at the
 time of writing. Then, it closes the IANA Registry for RTP Payload Formats
 Media Types for future registration. Beyond instructing IANA to close
 this registry, the instructions to authors in <span>[<a href="#RFC8088" class="cite xref">RFC8088</a>]</span> are updated so that
-registration in the closed registry is no longer required.<a href="#section-1-3" class="pilcrow">¶</a></p>
+registration in the closed registry is no longer mentioned.<a href="#section-1-3" class="pilcrow">¶</a></p>
 <p id="section-1-4">It is unclear how the "RTP Payload formats Media Types"
 <span>[<a href="#RTP-FORMATS" class="cite xref">RTP-FORMATS</a>]</span> registry came into existence. The registry
 references <span>[<a href="#RFC4855" class="cite xref">RFC4855</a>]</span> as the instructions for this registry. However,
@@ -1316,37 +1324,53 @@ specification and then remove this note.<a href="#section-4-5" class="pilcrow">�
 <p id="section-5-1">This document has no security considerations as it defines an administrative rule change.<a href="#section-5-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="sec-normative-references">
+<div id="sec-combined-references">
 <section id="section-6">
-      <h2 id="name-normative-references">
-<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
+      <h2 id="name-references">
+<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-references" class="section-name selfRef">References</a>
       </h2>
+<div id="sec-normative-references">
+<section id="section-6.1">
+        <h3 id="name-normative-references">
+<a href="#section-6.1" class="section-number selfRef">6.1. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
+        </h3>
 <dl class="references">
 <dt id="RFC2119">[RFC2119]</dt>
-      <dd>
+        <dd>
 <span class="refAuthor">Bradner, S.</span>, <span class="refTitle">"Key words for use in RFCs to Indicate Requirement Levels"</span>, <span class="seriesInfo">BCP 14</span>, <span class="seriesInfo">RFC 2119</span>, <span class="seriesInfo">DOI 10.17487/RFC2119</span>, <time datetime="1997-03" class="refDate">March 1997</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;</span>. </dd>
 <dd class="break"></dd>
+<dt id="RFC8088">[RFC8088]</dt>
+        <dd>
+<span class="refAuthor">Westerlund, M.</span>, <span class="refTitle">"How to Write an RTP Payload Format"</span>, <span class="seriesInfo">RFC 8088</span>, <span class="seriesInfo">DOI 10.17487/RFC8088</span>, <time datetime="2017-05" class="refDate">May 2017</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc8088">https://www.rfc-editor.org/info/rfc8088</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RTP-FORMATS">[RTP-FORMATS]</dt>
+        <dd>
+<span class="refTitle">"IANA's registry for RTP Payload Format Media Types"</span>, <time datetime="2023-11" class="refDate">November 2023</time>, <span>&lt;<a href="https://www.iana.org/assignments/rtp-parameters/rtp-parameters.xhtml#rtp-parameters-2">https://www.iana.org/assignments/rtp-parameters/rtp-parameters.xhtml#rtp-parameters-2</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="MEDIA-TYPES">[MEDIA-TYPES]</dt>
+        <dd>
+<span class="refTitle">"IANA's registry for Media Types"</span>, <time datetime="2023-11" class="refDate">November 2023</time>, <span>&lt;<a href="https://www.iana.org/assignments/media-types/media-types.xhtml">https://www.iana.org/assignments/media-types/media-types.xhtml</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC8174">[RFC8174]</dt>
+      <dd>
+<span class="refAuthor">Leiba, B.</span>, <span class="refTitle">"Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words"</span>, <span class="seriesInfo">BCP 14</span>, <span class="seriesInfo">RFC 8174</span>, <span class="seriesInfo">DOI 10.17487/RFC8174</span>, <time datetime="2017-05" class="refDate">May 2017</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+</dl>
+</section>
+</div>
+<div id="sec-informative-references">
+<section id="section-6.2">
+        <h3 id="name-informative-references">
+<a href="#section-6.2" class="section-number selfRef">6.2. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
+        </h3>
+<dl class="references">
 <dt id="RFC4855">[RFC4855]</dt>
       <dd>
 <span class="refAuthor">Casner, S.</span>, <span class="refTitle">"Media Type Registration of RTP Payload Formats"</span>, <span class="seriesInfo">RFC 4855</span>, <span class="seriesInfo">DOI 10.17487/RFC4855</span>, <time datetime="2007-02" class="refDate">February 2007</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc4855">https://www.rfc-editor.org/info/rfc4855</a>&gt;</span>. </dd>
 <dd class="break"></dd>
-<dt id="RFC8088">[RFC8088]</dt>
-      <dd>
-<span class="refAuthor">Westerlund, M.</span>, <span class="refTitle">"How to Write an RTP Payload Format"</span>, <span class="seriesInfo">RFC 8088</span>, <span class="seriesInfo">DOI 10.17487/RFC8088</span>, <time datetime="2017-05" class="refDate">May 2017</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc8088">https://www.rfc-editor.org/info/rfc8088</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="RTP-FORMATS">[RTP-FORMATS]</dt>
-      <dd>
-<span class="refTitle">"IANA's registry for RTP Payload Format Media Types"</span>, <time datetime="2023-11" class="refDate">November 2023</time>, <span>&lt;<a href="https://www.iana.org/assignments/rtp-parameters/rtp-parameters.xhtml#rtp-parameters-2">https://www.iana.org/assignments/rtp-parameters/rtp-parameters.xhtml#rtp-parameters-2</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="MEDIA-TYPES">[MEDIA-TYPES]</dt>
-      <dd>
-<span class="refTitle">"IANA's registry for Media Types"</span>, <time datetime="2023-11" class="refDate">November 2023</time>, <span>&lt;<a href="https://www.iana.org/assignments/media-types/media-types.xhtml">https://www.iana.org/assignments/media-types/media-types.xhtml</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="RFC8174">[RFC8174]</dt>
-    <dd>
-<span class="refAuthor">Leiba, B.</span>, <span class="refTitle">"Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words"</span>, <span class="seriesInfo">BCP 14</span>, <span class="seriesInfo">RFC 8174</span>, <span class="seriesInfo">DOI 10.17487/RFC8174</span>, <time datetime="2017-05" class="refDate">May 2017</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc8174">https://www.rfc-editor.org/info/rfc8174</a>&gt;</span>. </dd>
-<dd class="break"></dd>
 </dl>
+</section>
+</div>
 </section>
 </div>
 <div id="acknowledgments">
