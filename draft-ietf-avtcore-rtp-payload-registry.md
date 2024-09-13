@@ -50,12 +50,12 @@ Media Types registry is the crucial registry to register any Media
 Type to establish the media type used to identified the format in
 various signaling usage.
 
-To resolve this situation this document performs the following. First
-it updates the registry to include known RTP payload formats at the
-time of writing. Then it closes the IANA Registry for RTP Payload
-formats Media Types for future registration. Beyond instructing IANA
-to close this registry, the instructions to authors in RFC 8088 are
-updated to reflect this.
+This document resolves the situation by first updating the RTP Payload
+Format Media Type registry to include all the known RTP payload
+formats at the time of writing, then it closes this IANA Registry for
+any future registration.  Beyond instructing IANA to close this
+registry, the instructions to authors in RFC 8088 are updated to
+reflect this.
 
 --- middle
 
@@ -150,4 +150,4 @@ This document has no security considerations as it defines an administrative rul
 
 # Acknowledgments
 
-   The author likes to thank Jonathan Lennox and Hyunsik Yang for review and editorial fixes.
+   The author likes to thank Jonathan Lennox, Zaheduzzaman Sarker, and Hyunsik Yang for review and editorial fixes.
