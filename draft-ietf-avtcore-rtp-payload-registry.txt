@@ -4,9 +4,9 @@
 
 AVTCORE                                                    M. Westerlund
 Internet-Draft                                                  Ericsson
-Updates: 8088 (if approved)                               28 August 2024
+Updates: 8088 (if approved)                            13 September 2024
 Intended status: Standards Track                                        
-Expires: 1 March 2025
+Expires: 17 March 2025
 
 
         Closing the RTP Payload Format Media Types IANA Registry
@@ -21,12 +21,12 @@ Abstract
    register any Media Type to establish the media type used to
    identified the format in various signaling usage.
 
-   To resolve this situation this document performs the following.
-   First it updates the registry to include known RTP payload formats at
-   the time of writing.  Then it closes the IANA Registry for RTP
-   Payload formats Media Types for future registration.  Beyond
-   instructing IANA to close this registry, the instructions to authors
-   in RFC 8088 are updated to reflect this.
+   This document resolves the situation by first updating the RTP
+   Payload Format Media Type registry to include all the known RTP
+   payload formats at the time of writing, then it closes this IANA
+   Registry for any future registration.  Beyond instructing IANA to
+   close this registry, the instructions to authors in RFC 8088 are
+   updated to reflect this.
 
 About This Document
 
@@ -59,7 +59,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 1 March 2025.
+   This Internet-Draft will expire on 17 March 2025.
 
 Copyright Notice
 
@@ -226,8 +226,8 @@ Table of Contents
 
 Appendix A.  Acknowledgments
 
-   The author likes to thank Jonathan Lennox and Hyunsik Yang for review
-   and editorial fixes.
+   The author likes to thank Jonathan Lennox, Zaheduzzaman Sarker, and
+   Hyunsik Yang for review and editorial fixes.
 
 Author's Address
 
