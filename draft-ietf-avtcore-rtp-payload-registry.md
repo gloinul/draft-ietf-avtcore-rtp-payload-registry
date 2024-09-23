@@ -175,4 +175,4 @@ This document has no security considerations as it defines an administrative rul
 
 # Acknowledgments
 
-   The author likes to thank Jonathan Lennox, Zaheduzzaman Sarker, and Hyunsik Yang for review and editorial fixes.
+   The author likes to thank Jonathan Lennox, Zaheduzzaman Sarker, Bernard Aboba and Hyunsik Yang for review and editorial fixes.
