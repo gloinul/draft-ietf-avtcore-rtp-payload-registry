@@ -39,7 +39,10 @@ normative:
     title: "IANA's registry for Media Types"
     date: Nov 2023
 
-
+  AV1-Media-Type:
+    target: "https://www.iana.org/assignments/media-types/video/AV1"
+    title: "IANA Media Type Entry for video/AV1"
+    date: Jan 2021
 
 --- abstract
 
@@ -124,11 +127,33 @@ IANA is requested to add the following missing RTP Payload types to
 the "RTP Payload Format Media Types" registry {{RTP-FORMATS}}.
 
 | Media Type | Sub Type | Clock Rate (Hz) | Channels (audio) | Reference |
+| application | flexfec | | | RFC8627 |
+| audio | EVRCNW | 16000 |  | RFC6884 |
+| audio | EVRCNW0 | 16000 |  | RFC6884 |
+| audio | EVRCNW1 | 16000 |  | RFC6884 |
+| audio | aptx |  |  | RFC7310 |
+| audio | opus | 48000 |  | RFC7587 |
+| audio | G711-0 | |  | RFC7650 |
+| audio | flexfec | |  | RFC8627 |
+| text | flexfec | | | RFC8627 |
+| text | ttml+xml | | | RFC8759 |
 | video | VP8 | 90000 | | RFC7741 |
-| video | AV1 | 90000 | | https://www.iana.org/assignments/media-types/video/AV1 |
+| video | AV1 | 90000 | | {{AV1-Media-Type}} |
 | video | HEVC | 90000 | | RFC7798 |
+| video | smpte291 |  | | RFC8331 |
 | video | VVC | 90000 | | RFC9328 |
+| video | EVC | 90000 | | RFC9584 |
+| video | flexfec |  | | RFC8627 |
 {: #iana-entries title="Payload Types to Register in RTP Payload Format Media Types" cols="l l l l l"}
+
+IANA is requested to update the following RTP Payload types in the "RTP Payload Format Media Types" registry {{RTP-FORMATS}}.
+
+| Media Type | Sub Type | Clock Rate (Hz) | Channels (audio) | Reference |
+| audio | MP4A-LATM |  | | RFC6416 |
+| video | MP4V-ES | 90000 | | RFC6416 |
+{: #iana-update-entries title="Payload Types to update in RTP Payload Format Media Types" cols="l l l l l"}
+
+
 
 IANA is further requested to close the "RTP Payload Format Media
 Types" registry {{RTP-FORMATS}} for any further registrations. IANA
