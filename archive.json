@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-09-22T01:14:30.489577+00:00",
+  "timestamp": "2024-09-24T01:10:20.005183+00:00",
   "repo": "gloinul/draft-ietf-avtcore-rtp-payload-registry",
   "labels": [
     {
@@ -92,6 +92,32 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 2,
+      "id": "PR_kwDOKq1Bf858XWfJ",
+      "title": "Addressing Elwyn Davies Genart comments",
+      "url": "https://github.com/gloinul/draft-ietf-avtcore-rtp-payload-registry/pull/2",
+      "state": "OPEN",
+      "author": "gloinul",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-09-23T12:52:18Z",
+      "updatedAt": "2024-09-23T12:52:18Z",
+      "baseRepository": "gloinul/draft-ietf-avtcore-rtp-payload-registry",
+      "baseRefName": "main",
+      "baseRefOid": "085580aaa6013f75acde0ac0854c55b5ff6fc465",
+      "headRepository": "gloinul/draft-ietf-avtcore-rtp-payload-registry",
+      "headRefName": "genart",
+      "headRefOid": "d9abe0df1db64d93a3dbb853ea34a19cc653ff64",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
     }
   ]
 }
