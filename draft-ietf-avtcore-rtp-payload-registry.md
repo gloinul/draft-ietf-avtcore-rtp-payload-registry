@@ -46,12 +46,12 @@ normative:
 
 --- abstract
 
-It has been observed that specifications of new RTP payload formats often forget
-to specify registration of the format's media type in the IANA registry "RTP Payload Formats
-Media Types" as recommended by RFC 8088. In practice this has no real
-impact. One reason is that the Media Types registry is the crucial registry to
-register any Media Type to establish the media type used to identified the
-format in various signaling usage.
+It has been observed that specifications of new Real-time Transport Protocol
+(RTP) payload formats often forget to specify registration of the format's media
+type in the IANA registry "RTP Payload Formats Media Types" as recommended by
+RFC 8088. In practice this has no real impact. One reason is that the Media
+Types registry is the crucial registry to register any Media Type to establish
+the media type used to identified the format in various signaling usage.
 
 This document resolves the situation by first updating the RTP Payload
 Format Media Type registry to include all the known RTP payload
@@ -64,12 +64,12 @@ reflect this.
 
 # Introduction {#introduction}
 
-It has been observed that specifications of new RTP payload formats often forget
-to specify registration of the format's media type in the IANA registry "RTP
-Payload Formats Media Types" {{RTP-FORMATS}} as recommended by {{RFC8088}}.  In
-practice this has no real impact. This registry is not used for any purpose
-other than to track which media types actually have RTP payload formats. That
-purpose could be addressed through other means.
+It has been observed that specifications of new Real-time Transport Protocol
+(RTP) payload formats often forget to specify registration of the format's media
+type in the IANA registry "RTP Payload Formats Media Types" {{RTP-FORMATS}} as
+recommended by {{RFC8088}}.  In practice this has no real impact. This registry
+is not used for any purpose other than to track which media types actually have
+RTP payload formats. That purpose could be addressed through other means.
 
 The Media Types registry {{MEDIA-TYPES}} is the crucial
 registry to register any Media Type to establish the media type used
@@ -114,10 +114,11 @@ Payload Format media types" sub-registry of the RTP registry
 
 This paragraph is changed to the following:
 
-"Since all RTP payload formats contain a media type specification,
-they also need an IANA Considerations section.  The media type name
-must be registered, and this is done by requesting that IANA register
-that media name."
+"Since all RTP payload formats contain a media type specification, they also
+need an IANA Considerations section.  The media type name must be registered,
+and this is done by requesting that IANA register that media name in the Media
+Types registry
+(https://www.iana.org/assignments/media-types/media-types.xhtml)."
 
 Thus removing the need to register in the "RTP
 Payload Format media types".
@@ -187,5 +188,5 @@ This document has no security considerations as it defines an administrative rul
 # Acknowledgments
 
  The author likes to thank Jonathan Lennox, Zaheduzzaman Sarker,
- Bernard Aboba, Elwyn Davies, and Hyunsik Yang for review and
+ Bernard Aboba, Elwyn Davies, Wes Hardaker, and Hyunsik Yang for review and
  editorial fixes.
