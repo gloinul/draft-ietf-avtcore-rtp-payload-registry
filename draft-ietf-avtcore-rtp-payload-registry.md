@@ -46,12 +46,12 @@ normative:
 
 --- abstract
 
-It has been observed that specifications of new RTP payload formats often
-forget to register themselves in the IANA registry "RTP Payload Formats Media
-Types". In practice this has no real impact. One reason is that the
-Media Types registry is the crucial registry to register any Media
-Type to establish the media type used to identified the format in
-various signaling usage.
+It has been observed that specifications of new RTP payload formats often forget
+to specify registration of the format's media type in the IANA registry "RTP Payload Formats
+Media Types" as recommended by RFC 8088. In practice this has no real
+impact. One reason is that the Media Types registry is the crucial registry to
+register any Media Type to establish the media type used to identified the
+format in various signaling usage.
 
 This document resolves the situation by first updating the RTP Payload
 Format Media Type registry to include all the known RTP payload
@@ -64,16 +64,16 @@ reflect this.
 
 # Introduction {#introduction}
 
-It has been observed that specifications of new RTP payload formats often
-forget to register themselves in the IANA registry "RTP Payload formats Media
-Types" {{RTP-FORMATS}}. In practice this has no real impact. This
-registry is not used for any purpose other than to track which media
-types actually have RTP payload formats. That purpose could be
-addressed through other means.
+It has been observed that specifications of new RTP payload formats often forget
+to specify registration of the format's media type in the IANA registry "RTP
+Payload Formats Media Types" {{RTP-FORMATS}} as recommended by {{RFC8088}}.  In
+practice this has no real impact. This registry is not used for any purpose
+other than to track which media types actually have RTP payload formats. That
+purpose could be addressed through other means.
 
 The Media Types registry {{MEDIA-TYPES}} is the crucial
 registry to register any Media Type to establish the media type used
-to identify the format in various signalling usage, to avoid
+to identify the format in various signalling usages, to avoid
 collisions, and to reference their specifications.
 
 To resolve this situation, this document performs the following actions. First,
@@ -100,8 +100,9 @@ updated when closing the registry.
 
 # Update to How To Write an RTP Payload Format
 
-How to write an RTP Payload format {{RFC8088}} mandates that RTP
-Payload formats shall register in RTP Payload Format media types:
+How to write an RTP Payload format {{RFC8088}} mandates in its section on IANA
+Considerations (Section 7.4) that RTP Payload formats shall register in RTP
+Payload Format media types:
 
 "Since all RTP payload formats contain a media type specification,
 they also need an IANA Considerations section.  The media type name
@@ -154,15 +155,25 @@ IANA is requested to update the following RTP Payload types in the "RTP Payload 
 {: #iana-update-entries title="Payload Types to update in RTP Payload Format Media Types" cols="l l l l l"}
 
 
-
 IANA is further requested to close the "RTP Payload Format Media
 Types" registry {{RTP-FORMATS}} for any further registrations. IANA
-should add the following to the note to the registry:
+should add the following to the existing note for the registry:
 
 "This registry has been closed as it was considered redundant as all
 RTP Payload formats are part of the Media Types registry
 (https://www.iana.org/assignments/media-types/media-types.xhtml). For
 further motivation see (RFC-TBD1)."
+
+In addition it is requested that the existing note of "RTP Payload Format Media
+Types" registry {{RTP-FORMATS}} is changed in the following way:
+
+OLD:
+Registration procedures and a registration template can be found in [RFC4855].
+
+NEW:
+It was previously stated that registration procedures and a registration
+template can be found in [RFC4855].  This is not actually the case as
+discussed by [RFC-TBD1].
 
 RFC-Editor Note: Please replace RFC-TBD1 with the RFC number of this
 specification and then remove this note.
@@ -175,4 +186,6 @@ This document has no security considerations as it defines an administrative rul
 
 # Acknowledgments
 
-   The author likes to thank Jonathan Lennox, Zaheduzzaman Sarker, and Hyunsik Yang for review and editorial fixes.
+ The author likes to thank Jonathan Lennox, Zaheduzzaman Sarker,
+ Bernard Aboba, Elwyn Davies, and Hyunsik Yang for review and
+ editorial fixes.
