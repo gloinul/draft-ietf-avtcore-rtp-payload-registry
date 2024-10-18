@@ -6,7 +6,7 @@ updates: 8088
 cat: std
 ipr: trust200902
 wg: AVTCORE
-area: ART
+area: WIT
 submissiontype: IETF  # also: "independent", "IAB", or "IRTF"
 
 venue:
@@ -46,19 +46,14 @@ normative:
 
 --- abstract
 
-It has been observed that specifications of new Real-time Transport Protocol
-(RTP) payload formats often forget to specify registration of the format's media
-type in the IANA registry "RTP Payload Formats Media Types" as recommended by
-RFC 8088. In practice this has no real impact. One reason is that the Media
-Types registry is the crucial registry to register any Media Type to establish
-the media type used to identified the format in various signaling usage.
+A number of authors of RTP Payload Formats and the WG process have
+failed to ensure that the media types for RTP payload formats is
+registred in the IANA registry "RTP Payload Formats Media Types" as
+recommended by RFC 8088. To simplify the process and rely only on the
+media types registry this document closes the RTP payload specific
+registry. In addition it updates the instruction to payload format
+authors in RFC 8088 to reflect this change.
 
-This document resolves the situation by first updating the RTP Payload
-Format Media Type registry to include all the known RTP payload
-formats at the time of writing, then it closes this IANA Registry for
-any future registration.  Beyond instructing IANA to close this
-registry, the instructions to authors in RFC 8088 are updated to
-reflect this.
 
 --- middle
 
@@ -83,26 +78,27 @@ Media Types for future registration. Beyond instructing IANA to close
 this registry, the instructions to authors in {{RFC8088}} are updated so that
 registration in the closed registry is no longer mentioned.
 
-It is unclear how the "RTP Payload formats Media Types"
-{{RTP-FORMATS}} registry came into existence. The registry
-references {{RFC4855}} as the instructions for this registry. However,
-reviewing that RFC we have been unable to find any text that defines
-its purpose and rules. Further attempts to find how the registry was
-created have failed to find any reference to its creation. It is
-likely this was created based on email or AD request. Thus, there is
-no known existing specification for this registry that needs to be
-updated when closing the registry.
-
-# Conventions
-
-{::boilerplate bcp14}
+The origins of the "RTP Payload Formats Media Types" registry, as referenced in
+{{RTP-FORMATS}}, are unclear. The registry cites {{RFC4855}} as providing the
+instructions for its maintenance. However, upon reviewing RFC 4855, no text has
+been found that defines the registry's purpose and operational rules. Further
+attempts to trace the registry's creation have failed to uncover any references
+to its establishment. It is likely that the registry was created based on
+correspondence via email or at the request of an Area Director (AD).
+Consequently, there is no known existing specification for this registry that
+requires updating upon its closure.
 
 
 # Update to How To Write an RTP Payload Format
 
-How to write an RTP Payload format {{RFC8088}} mandates in its section on IANA
-Considerations (Section 7.4) that RTP Payload formats shall register in RTP
-Payload Format media types:
+How to write an RTP Payload format {{RFC8088}} mandates in its section
+on IANA Considerations (Section 7.4) that RTP Payload formats shall
+register in RTP Payload Format media types. This paragraph is changed
+without affecting its status as part of an informational RFC. Thus
+removing the need to register in the "RTP Payload Format media types".
+
+
+OLD:
 
 "Since all RTP payload formats contain a media type specification,
 they also need an IANA Considerations section.  The media type name
@@ -112,16 +108,14 @@ also be requested that the media type is included under the "RTP
 Payload Format media types" sub-registry of the RTP registry
 (http://www.iana.org/assignments/rtp-parameters)."
 
-This paragraph is changed to the following:
+NEW:
 
-"Since all RTP payload formats contain a media type specification, they also
-need an IANA Considerations section.  The media type name must be registered,
-and this is done by requesting that IANA register that media name in the Media
-Types registry
+"Since all RTP payload formats contain a media type specification,
+they also need an IANA Considerations section.  The media type name
+must be registered, and this is done by requesting that IANA register
+that media name in the Media Types registry
 (https://www.iana.org/assignments/media-types/media-types.xhtml)."
 
-Thus removing the need to register in the "RTP
-Payload Format media types".
 
 # IANA Considerations {#IANA-Consideration}
 
@@ -160,12 +154,14 @@ IANA is further requested to close the "RTP Payload Format Media
 Types" registry {{RTP-FORMATS}} for any further registrations. IANA
 should add the following to the existing note for the registry:
 
+NEW:
+
 "This registry has been closed as it was considered redundant as all
 RTP Payload formats are part of the Media Types registry
 (https://www.iana.org/assignments/media-types/media-types.xhtml). For
 further motivation see (RFC-TBD1)."
 
-In addition it is requested that the existing note of "RTP Payload Format Media
+In addition, it is requested that the existing note of "RTP Payload Format Media
 Types" registry {{RTP-FORMATS}} is changed in the following way:
 
 OLD:
@@ -188,5 +184,5 @@ This document has no security considerations as it defines an administrative rul
 # Acknowledgments
 
  The author likes to thank Jonathan Lennox, Zaheduzzaman Sarker,
- Bernard Aboba, Elwyn Davies, Wes Hardaker, and Hyunsik Yang for review and
- editorial fixes.
+ Bernard Aboba, Elwyn Davies, Wes Hardaker, Gunter Van de Velde, Éric
+ Vyncke, Mahesh Jethanandani, and Hyunsik Yang for review and editorial fixes.
