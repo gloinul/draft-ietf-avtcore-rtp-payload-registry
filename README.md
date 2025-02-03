@@ -1,6 +1,6 @@
-# Closing the IANA RTP Payload Format Registry
+# Closing the RTP Payload Format Media Types IANA Registry
 
-This is the working area for the IETF [AVTCORE Working Group](https://datatracker.ietf.org/wg/avtcore/documents/) Internet-Draft, "Closing the IANA RTP Payload Format Registry".
+This is the working area for the IETF [AVTCORE Working Group](https://datatracker.ietf.org/group/avtcore/documents/) Internet-Draft, "Closing the RTP Payload Format Media Types IANA Registry".
 
 * [Editor's Copy](https://gloinul.github.io/draft-ietf-avtcore-rtp-payload-registry/#go.draft-ietf-avtcore-rtp-payload-registry.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-avtcore-rtp-payload-registry)
